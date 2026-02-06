@@ -173,10 +173,6 @@ section {
 
 /*tarieven sectie*/
 
-.tarieven-section {
-
-}
-
 .tarieven-section:after {
     content: '';
     position: absolute;
@@ -193,7 +189,7 @@ section {
     width: 400px;
     height: auto;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     border: 2px solid var(--gold);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
