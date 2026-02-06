@@ -21,6 +21,7 @@ body {
 .navbar {
     background-color: var(--Lbeige);
     transition: all 0.3s;
+    
 }
 
 .nav-link {
@@ -61,15 +62,55 @@ body {
 }
 .btn-gold:hover { background-color: #A88734; color: #1C1C1C; }
 
-
+/*hero1*/
 
 .hero1 {
-    height: 200vh;
-    margin-top: 100px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/NielsMauto.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.hero-tekst-container {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    h1 {
+        font-weight: bolder;
+        font-size: clamp(30px, 12vw, 80px);
+    }
+}
+
+.hero-sub-tekst {
+    font-size: clamp(15px, 3vw, 20px);
+}
+
+.darkoverlay-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1C1C1C;
+    opacity: 0.9;
+}
+
+.hero-crown-title {
+    width: clamp(120px, 40vw, 250px);
+    position: relative;
+    top: 20px;
 }
 
 /*media*/
-@media (max-width: 991.98px) {
+@media (max-width: 990px) {
   /* optional: reduce logo size on small screens */
   .navbar-brand img { width: 140px; height: auto; }
+
+  .hero1 {
+        background-position: right bottom;
+    }
 }
