@@ -1,22 +1,10 @@
-const rijschoolNaam = "Rijschool Kroonenburg";
+// script.js
+const navbar = document.querySelector('.navbar');
 
-fetch(`https://opendata.cbr.nl/resource/xxxx.json?rijschoolnaam=${encodeURIComponent(rijschoolNaam)}`)
-    .then(response => response.json())
-    .then(data => {
-        if (!data.length) {
-            document.getElementById("percentage").innerText = "Geen data gevonden";
-            return;
-        }
-
-        const rijschool = data[0];
-        document.getElementById("percentage").innerText =
-            rijschool.slagingspercentage + "%";
-
-        document.getElementById("bron").innerText =
-            `Gebaseerd op ${rijschool.aantal_examens} examens (bron: CBR)`;
-    })
-    .catch(error => {
-        document.getElementById("percentage").innerText =
-            "Kon data niet laden";
-        console.error(error);
-    });
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) { // pas aan hoeveel scroll je wilt
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
