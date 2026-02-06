@@ -12,6 +12,30 @@ body {
     color: #1C1C1C;
 }
 
+/*components*/
+
+section {
+    height: 100vh;
+}
+
+/*animaties*/
+
+.scale-animation.show {
+    transform: scale(1);
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /*navbar*/
 
 .navbar .navbar-nav {
@@ -48,7 +72,7 @@ body {
 
 .navbar.scrolled {
     background-color: beige;
-    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 16px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -56,9 +80,11 @@ body {
   background-color: #C9A24D;
   color: #1C1C1C;
   border: none;
+  font-size: larger;
   font-weight: 600;
-  padding: .45rem .9rem;
+  padding: .45rem 10px;
   border-radius: .35rem;
+  width: 150px;
 }
 .btn-gold:hover { background-color: #A88734; color: #1C1C1C; }
 
