@@ -29,4 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+const pakketten = document.querySelectorAll('.pakketkaart');
+
+pakketten.forEach(pakket => {
+  pakket.addEventListener('click', function () {
+    window.location.href = 'contact.html';
+  });
+});
+
 

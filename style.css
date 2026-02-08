@@ -129,6 +129,9 @@ hr.small {
     padding: .45rem 10px;
     border-radius: .35rem;
     width: 150px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s;
 }
 
 .btn-gold:hover {
@@ -195,11 +198,12 @@ hr.small {
 
 .pakketkaart {
     border-radius: 10px;
-    border: 2px solid beige;
+    border: 2px solid rgb(188, 164, 44);
     padding: 20px;
     background: var(--Lbeige);
     color: black;
     position: relative;
+    top: 0;
     min-height: 500px;
     min-width: 280px;
     transform: scale(0);
@@ -209,6 +213,12 @@ hr.small {
         font-size: 20px;
         font-weight: bold;
     }
+}
+
+.pakketkaart:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    top: -5px;
+    transition: all 0.3s ease;
 }
 
 .goldpakket {
@@ -226,6 +236,10 @@ hr.small {
 
     hr {
         border: 2px solid rgb(72, 64, 0);
+    }
+
+    hr.small {
+       border: 1px solid rgb(72, 64, 0); 
     }
 
 }
